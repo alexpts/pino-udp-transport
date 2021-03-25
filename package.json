@@ -1,0 +1,39 @@
+{
+  "name": "pino-udp",
+  "version": "1.0.1",
+  "description": "A pino 'transport' for writing to a udp socket",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest tests/unit --forceExit"
+  },
+  "keywords": [
+    "udp",
+    "transport",
+    "logger",
+    "pino"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexpts/pino-udp-transport.git"
+  },
+  "author": "Alex Pavlov <alexpts3@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexpts/pino-udp-transport/issues"
+  },
+  "homepage": "https://github.com/alexpts/pino-udp-transport#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "pino": "^6.11.2"
+  },
+  "jest": {
+    "cacheDirectory": "tests/cache",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**"
+    ],
+    "coverageDirectory": "tests/coverage",
+    "maxConcurrency": 5,
+    "notify": true
+  }
+}

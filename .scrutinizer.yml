@@ -1,0 +1,26 @@
+filter:
+    paths:
+        - 'src/*'
+
+checks:
+    javascript: true
+
+tools:
+    external_code_coverage: false
+
+build:
+    nodes:
+        analysis:
+            tests:
+                override:
+                    - js-scrutinizer-run
+
+        #tests: true
+        coverage:
+            tests:
+                override:
+                    -   command: npm run test
+                        idle_timeout: 300
+                        coverage:
+                            file: tests/coverage/clover.xml
+                            format: clover
